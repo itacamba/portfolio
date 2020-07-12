@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MobileNav from './MobileNav';
+import {Link} from 'react-scroll'
 
 class Nav extends Component {
     constructor(){
@@ -27,17 +28,52 @@ class Nav extends Component {
                     <p>Software Engineer from Virginia, US</p>
                 </div>
                     <nav>
-                        <a href="/">About</a>
-                        <a href="/">Projects</a>
-                        <a href="/">Code Challenges</a>
+                        <Link 
+                            to="about"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                        About
+                        </Link>
+                        <Link 
+                            to="projects"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                        Projects
+                        </Link>
+                        <Link 
+                            to="code-challenges"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                        Code Challenges
+                        </Link>
                         {/* <a href="#">Technical Writting</a> */}
-                        <a href="/">Contact</a>
+                        <Link 
+                            to="contact"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                        Contact
+                        </Link>
                     </nav>
                 <div id="mobile-icon"  onClick={this.handleNavClick}>
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
                {this.state.navClicked? <MobileNav/> : null }
-               {/* {window.innerWidth > 920? this.handleNavClick: null} */}
             </div>
         );
     }
