@@ -1,23 +1,18 @@
-import React, { Component } from 'react';
-import MobileNav from './MobileNav';
+import React, { useState } from 'react';
+import MobileNav from './MobileNav'
 import {Link} from 'react-scroll'
 
-class Nav extends Component {
-    constructor(){
-        super()
-        this.state = {
-            navClicked: false
-        }
-    }
-    handleNavClick = () => {
-        this.setState({
-            navClicked: !this.state.navClicked
-        })
+const Nav2 = () => {
+    const [navClicked, setNavClicked] = useState(false)
+    
+    const handleNavClick = () => {
+        setNavClicked(!navClicked)
     }
 
-    render() {
-        return (
-            <div id="nav-container">
+
+    
+    return (
+        <div id="nav-container">
                 <div id="logo">
                     <h1>Carla Sahagun</h1>
                     <p>Software Engineer from Virginia, US</p>
@@ -65,13 +60,12 @@ class Nav extends Component {
                         Contact
                         </Link>
                     </nav>
-                <div id="mobile-icon"  onClick={this.handleNavClick}>
+                <div id="mobile-icon"  onClick={handleNavClick}>
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
-               {this.state.navClicked? <MobileNav/> : null }
+               {navClicked? <MobileNav/> : null}
             </div>
-        );
-    }
-}
+    );
+};
 
-export default Nav;
+export default Nav2;

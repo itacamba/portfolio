@@ -66,3 +66,12 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+### Documentation By Carla Sahagun
+
+### Dependencies
+-   npm install react-scroll:  
+    * added scroll to top button => ScrollToTopBtn.js
+    * added scroll to Component functionality => Nav.js, the <Link> component allows the library to work.
+    
