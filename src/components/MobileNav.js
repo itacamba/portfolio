@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class MobileNav extends Component {
-    render() {
-        return (
+const MobileNav = () => {
+    return (
         <div id="mobile-nav">
             <a href="/">About</a>
             <a href="/">Projects</a>
@@ -10,8 +9,8 @@ class MobileNav extends Component {
             {/* <a href="#">Technical Writting</a> */}
             <a href="/">Contact</a>
         </div>
-        );
-    }
-}
+    );
+};
 
 export default MobileNav;
+

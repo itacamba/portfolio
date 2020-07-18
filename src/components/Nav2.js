@@ -9,8 +9,6 @@ const Nav2 = () => {
         setNavClicked(!navClicked)
     }
 
-
-    
     return (
         <div id="nav-container">
                 <div id="logo">
@@ -23,7 +21,7 @@ const Nav2 = () => {
                             activeClass='active'
                             spy={true}
                             smooth={true}
-                            offset={0}
+                            offset={-90}
                             duration={500}
                         >
                         About
@@ -67,5 +65,4 @@ const Nav2 = () => {
             </div>
     );
 };
-
 export default Nav2;

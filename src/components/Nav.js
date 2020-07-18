@@ -9,6 +9,7 @@ class Nav extends Component {
             navClicked: false
         }
     }
+
     handleNavClick = () => {
         this.setState({
             navClicked: !this.state.navClicked
@@ -73,5 +74,4 @@ class Nav extends Component {
         );
     }
 }
-
 export default Nav;

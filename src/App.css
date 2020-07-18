@@ -1,3 +1,8 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -36,10 +41,17 @@
     transform: rotate(360deg);
   }
 }
+p{
+  line-height: 28px;
+  font-weight: 200;
+}
 a{
   text-decoration: none;
   color:black;
   cursor: pointer
+}
+span{
+  font-weight: 300;
 }
 /*-- NAV BAR --*/
 #mobile-icon{
@@ -92,12 +104,18 @@ nav a:hover{
 }
 /*- mobile navbar -*/
 #mobile-icon i{
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
 }
 /*- end mobile navbar -*/
 
 @media screen and (max-width: 920px) {
+  #logo h1{
+    font-size: 19px;
+  }
+  #logo p{
+    font-size: 10px;
+  }
   nav{ 
     display: none;
   }
@@ -118,16 +136,175 @@ nav a:hover{
   }
 }
 /*-- END NAV BAR --*/
+/*-- MAIN BANNER --*/
+#main-banner{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(255, 192, 203, 0.356); */
+  height: 480px;
+}
+#banner-figure{
+  margin-top: -50px;
+  /* background-color: yellow; */
+  width: 50%;
+}
+#banner-figure img{
+  margin-right: -130px;
+  /* border: 1px solid red; */
+  width: 100%;
+}
+#banner-content{
+  /* background-color: aqua; */
+  margin-top: -50px;
+  width: 50%;
+  text-align: left;
+}
+#banner-content h1{
+  font-size: 2.3vw;
+  font-weight: 500;
+}
+#banner-content p{
+  margin-top: 10px;
+  font-size: 1.8vw;
+  font-weight: 500;
+  color: #828282;
+}
+#main-banner button{
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 20px;
+  /* background-color: #D0BDF4; */
+  color: white;
+  font-weight: 600;
+  border: none;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bac0e2+0,bac0e2+36,bac0e2+36,f0f0fc+87 */
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bac0e2+0,bac0e2+13,bac0e2+13,f0f0fc+100 */
+  background: #bac0e2; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #bac0e2 0%, #bac0e2 13%, #bac0e2 13%, #f0f0fc 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #bac0e2 0%,#bac0e2 13%,#bac0e2 13%,#f0f0fc 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #bac0e2 0%,#bac0e2 13%,#bac0e2 13%,#f0f0fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bac0e2', endColorstr='#f0f0fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+@media screen and (max-width: 920px) {
+  #main-banner{
+    flex-direction: column;
+    height: auto;
+  }
+  #banner-content{
+    width: 100%;
+    padding: 100px 0px;
+    z-index: 1;
+    /* background-color: aqua; */
+  }
+  #banner-content h1{
+    font-size: 25px;
+   
+  }
+  #banner-content p{
+    font-size: 15px;
+  }
+  #banner-figure{
+    margin-top: -30%;
+    /* background-color: yellow; */
+    width: 100%;
+    z-index: 0;
+  }
+  #banner-figure img{
+    /* border: 1px solid red; */
+    width: 90%;
+    margin-right: 0;
+  }
+}
+/*-- END MAIN BANNER --*/
 /*-- ABOUT --*/
+#mobile-about{
+  display: none;
+}
 #about{
+  margin-top: 100px;
   width:100%;
-  height:600px;
-  background-color: red;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(217,217,243,1) 56%, rgba(187,193,227,1) 100%);
+  
+}
+#about-container{
+  width: 80%;
+  margin: 0 auto;
+  /* border: 1px solid blue; */
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+}
+#picture-and-phrase{
+  width: 50%;
+  /* border: 1px solid red; */
+  position: relative;
+}
+#my-picture{
+  width: 70%;
+}
+#my-picture img{
+  width: 100%;
+}
+#my-phrase{
+  /* border: 1px solid blue; */
+  position: absolute;
+  margin-top: -20%;
+  width: 60%;
+  left: 15%;
+}
+#my-phrase h1{
+  font-size: 1.6vw;
+  text-align: center;
+  background-color: azure;
+  border-radius: 25px;
+  padding:1.7vw 3vw;
+}
+#about-me{
+  /* border:1px solid red; */
+  width: 50%;
+}
+#about-me p{
+  text-align: left;
+  padding: 10px 0 2vw 10px;
+}
+#about-me span{
+  font-weight: 500;
+}
+@media screen and (max-width: 920px) {
+  #about-container{
+    display: none;
+    height: auto;
+  }
+  #mobile-about{
+    display:block;
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+  }
+  #mobile-about h1{
+    font-size: 20px;
+    padding-bottom: 50px;
+  }
+  #mobile-about img{
+    width: 300px;
+    height: 300px;
+    border-radius: 500px;
+    float: left;
+    shape-outside: circle();
+    padding-right: 20px;
+  }
+  #mobile-about p{
+    text-align: left;
+  }
+ 
 }
 /*-- END ABOUT --*/
 /*-- PROJECTS --*/
 #projects{
-  
     width:100%;
     height:600px;
     background-color: pink;
@@ -159,7 +336,7 @@ nav a:hover{
   z-index: 1000; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: green; /* Set a background color */
+  background-color:#f0f0fc; /* Set a background color */
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
@@ -167,7 +344,36 @@ nav a:hover{
   font-size: 18px; /* Increase font size */
 }
 #to-top-btn i{
-  color: blue;
-  font-size: 40px;
+  color: rgba(92, 90, 90, 0.411);
+  font-size: 25px;
 }
 /*-- END SCROLL TO TOP BTN --*/
+
+/* #purple{
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat, repeat;
+  background-image: url(./images/purple_figure.jpeg);
+} */
+/*-- Skills container --*/
+#skills-container{
+  width: 50%;
+  height:600px;
+  border:1px solid red;
+}
+#progress-holder{
+  margin-top: 40px;
+  width: 40%;
+  height: 6px;
+  background-color: #333333;
+  border-radius: 25px;
+  position: relative;
+}
+#progress-bar{
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: red;
+}
+/*-- End Skills Container --*/
