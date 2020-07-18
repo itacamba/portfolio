@@ -32,7 +32,7 @@ class About extends Component {
                     </div>
                 </div>
                 <div id="mobile-about">
-                    <h1><span>&lt;</span>Carla's Development World <span>&#x2f;&gt;</span></h1>
+                    <h1><span>&lt;</span>Carla's Development World<span>&#x2f;&gt;</span></h1>
                     <img src="../../square-pic.jpg" />
                     <p>My name is Carla. I am a developer who decided to tie up my own life
                             with front-end. My first site was created when my dad had the need to
