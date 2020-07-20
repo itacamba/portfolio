@@ -4,12 +4,10 @@ const MainBanner = () => {
     return (
         <div id="main-banner">
             <div id="banner-content">
-                <h1>Resourceful and Proactive Developer</h1>
-                <p>Full stack Web & Mobile Developer  </p>
-                <button className="purple-btn">Contact Me</button>
-            </div>
-            <div id="banner-figure">
-                <img alt="girl-computer" src="../../main-girl.jpg" />
+                <p>Hi, my name is</p>
+                <h1>Carla Sahagun.</h1>
+                <h2>I build things for the web.</h2>
+                <button>Get in Touch</button>
             </div>
         </div>
     );

@@ -64,7 +64,7 @@ span{
   display: none;
 }
 #nav-container{
-  width: 80%;
+  width: 90%;
   margin: 40px auto;
 
   /* background-color: red; */
@@ -86,7 +86,7 @@ nav{
 nav a{
   text-decoration: none;
   color: #f2f2f2;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 300;
   padding: 15px 0;
   padding-left: 40px;
@@ -95,14 +95,15 @@ nav a:hover{
   color: #e34343;
 }
 nav button{
-  padding: 15px 30px;
+  padding: 15px 20px;
   background-color: #24305E;
   border: 2px solid #e34343;
-  font-size: 18px;
+  font-size: 15px;
   border-radius: 5px;
   color: #e34343;
   margin-left: 40px;
   cursor: pointer;
+  font-weight: 600;
 }
 nav button:hover{
   background: #e3434359;
@@ -117,12 +118,6 @@ nav button:hover{
 /*- end mobile navbar -*/
 
 @media screen and (max-width: 920px) {
-  #logo h1{
-    font-size: 19px;
-  }
-  #logo p{
-    font-size: 10px;
-  }
   nav{ 
     display: none;
   }
@@ -145,55 +140,41 @@ nav button:hover{
 /*-- END NAV BAR --*/
 /*-- MAIN BANNER --*/
 #main-banner{
-  width: 80%;
+  width: 70%;
   margin: 70px auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   /* background: rgba(255, 192, 203, 0.356); */
   height: 26vw;
 }
-#banner-figure{
-  margin-top: -50px;
-  /* background-color: yellow; */
-  width: 50%;
-}
-#banner-figure img{
-  margin-right: -130px;
-  /* border: 1px solid red; */
-  width: 100%;
-}
 #banner-content{
   /* background-color: aqua; */
-  margin-top: -50px;
-  width: 50%;
   text-align: left;
 }
-#banner-content h1{
-  font-size: 2.3vw;
-  font-weight: 500;
-}
 #banner-content p{
-  margin-top: 10px;
-  font-size: 1.8vw;
+  font-size: 20px;
+  color:#e34343;
   font-weight: 500;
-  color: #828282;
 }
-#main-banner button{
+#banner-content h1{
+  font-size:6vw;
+  color:white;
+  font-weight: 700;
+}
+#banner-content h2{
+  font-size:6vw;
+  font-weight: 700;
+  color: #9EA5C1;
+}
+#banner-content button{
   margin-top: 20px;
-  padding: 10px 30px;
-  border-radius: 20px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 2px solid #e34343;
   /* background-color: #D0BDF4; */
-  color: white;
+  background-color: #24305E;
   font-weight: 600;
-  border: none;
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bac0e2+0,bac0e2+36,bac0e2+36,f0f0fc+87 */
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bac0e2+0,bac0e2+13,bac0e2+13,f0f0fc+100 */
-  background: #bac0e2; /* Old browsers */
-  background: -moz-linear-gradient(45deg, #bac0e2 0%, #bac0e2 13%, #bac0e2 13%, #f0f0fc 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(45deg, #bac0e2 0%,#bac0e2 13%,#bac0e2 13%,#f0f0fc 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(45deg, #bac0e2 0%,#bac0e2 13%,#bac0e2 13%,#f0f0fc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bac0e2', endColorstr='#f0f0fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  color: #e34343;
 }
 @media screen and (max-width: 920px) {
   #main-banner{
@@ -207,38 +188,22 @@ nav button:hover{
     z-index: 1;
     /* background-color: aqua; */
   }
-  #banner-content h1{
-    font-size: 25px;
-   
-  }
   #banner-content p{
-    font-size: 15px;
+    font-size: 16px;
   }
-  #banner-figure{
-    margin-top: -20%;
-    /* background-color: yellow; */
-    width: 100%;
-    z-index: 0;
-  }
-  #banner-figure img{
-    /* border: 1px solid red; */
-    width: 90%;
-    margin-right: 0;
-  }
+ 
 }
 @media screen and (max-width: 400px) {
 
   #main-banner{
     /* border:1px solid red; */
-    height: 250px
+    height: 300px
   }
   #banner-content h1{
-    font-size: 18px;
-   
+    font-size: 25px;
   }
-  #banner-content p{
-    font-size: 10px;
-    line-height: 10px;
+  #banner-content h2{
+    font-size: 25px;
   }
   
 }
