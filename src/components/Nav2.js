@@ -61,7 +61,7 @@ const Nav2 = () => {
                 <div id="mobile-icon"  onClick={handleNavClick}>
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
-               {navClicked? <MobileNav/> : null}
+               {navClicked? <MobileNav handleNavClick={handleNavClick}/> : null}
             </div>
     );
 };

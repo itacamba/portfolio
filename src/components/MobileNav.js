@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MobileNav = () => {
+const MobileNav = ({handleNavClick}) => {
     return (
         <div id="mobile-nav">
-            <i class="fa fa-times" aria-hidden="true"></i>
+            <i class="fa fa-times" aria-hidden="true" onClick={handleNavClick}></i>
             <a href="/"><i class="fa fa-square" aria-hidden="true"></i>About</a>
             <a href="/"><i class="fa fa-square" aria-hidden="true"></i>Skills</a>
             <a href="/"><i class="fa fa-square" aria-hidden="true"></i>Projects</a>
