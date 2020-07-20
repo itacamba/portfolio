@@ -12,8 +12,7 @@ const Nav2 = () => {
     return (
         <div id="nav-container">
                 <div id="logo">
-                    <h1>Carla Sahagun</h1>
-                    <p>Software Engineer from Virginia, US</p>
+                    <img src="../../logo.png"/>
                 </div>
                     <nav>
                         <Link 
@@ -34,7 +33,7 @@ const Nav2 = () => {
                             offset={0}
                             duration={500}
                         >
-                        Projects
+                        Skills
                         </Link>
                         <Link 
                             to="code-challenges"
@@ -44,7 +43,7 @@ const Nav2 = () => {
                             offset={0}
                             duration={500}
                         >
-                        Code Challenges
+                        Projects
                         </Link>
                         {/* <a href="#">Technical Writting</a> */}
                         <Link 
@@ -57,6 +56,7 @@ const Nav2 = () => {
                         >
                         Contact
                         </Link>
+                        <button>Resume</button>
                     </nav>
                 <div id="mobile-icon"  onClick={handleNavClick}>
                     <i class="fa fa-bars" aria-hidden="true"></i>

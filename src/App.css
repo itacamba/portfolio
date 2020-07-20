@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #24305E;
+}
 .App {
   text-align: center;
 }
@@ -71,21 +74,10 @@ span{
 }
 
 #logo{
-  /* width: 40%; */
+  width: 70px;
 }
-#logo h1{
-  text-transform: uppercase;
-  font-size: 23px;
-  font-weight: 600;
-  /* border: 1px solid yellow; */
-  text-align: left;
-}
-#logo p{
-  margin-top: -7px;
-  font-size: 13px;
-  /* border: 1px solid green; */
-  color: #828282;
-  font-weight: 500;
+#logo img{
+  width: 100%;
 }
 nav{
   /* width: 50%; */
@@ -93,19 +85,34 @@ nav{
 }
 nav a{
   text-decoration: none;
-  text-transform: uppercase;
-  color: #828282;
-  font-size: 15px;
+  color: #f2f2f2;
+  font-size: 18px;
+  font-weight: 300;
   padding: 15px 0;
   padding-left: 40px;
 }
 nav a:hover{
-  color: #282c34;
+  color: #e34343;
+}
+nav button{
+  padding: 15px 30px;
+  background-color: #24305E;
+  border: 2px solid #e34343;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #e34343;
+  margin-left: 40px;
+  cursor: pointer;
+}
+nav button:hover{
+  background: #e3434359;
+  
 }
 /*- mobile navbar -*/
 #mobile-icon i{
   font-size: 25px;
   cursor: pointer;
+  color: #e34343;
 }
 /*- end mobile navbar -*/
 
@@ -139,7 +146,7 @@ nav a:hover{
 /*-- MAIN BANNER --*/
 #main-banner{
   width: 80%;
-  margin: 0 auto;
+  margin: 70px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,6 +197,7 @@ nav a:hover{
 }
 @media screen and (max-width: 920px) {
   #main-banner{
+    margin: 30px auto;
     flex-direction: column;
     height: 350px;
   }
@@ -207,7 +215,7 @@ nav a:hover{
     font-size: 15px;
   }
   #banner-figure{
-    margin-top: -30%;
+    margin-top: -20%;
     /* background-color: yellow; */
     width: 100%;
     z-index: 0;
@@ -218,22 +226,21 @@ nav a:hover{
     margin-right: 0;
   }
 }
-@media screen and (max-width: 800px) {
-  /* #about{
-    border: 1px solid purple;
-    margin: 0;
+@media screen and (max-width: 400px) {
 
-  }
   #main-banner{
-    border:1px solid red;
-    height: 350px
+    /* border:1px solid red; */
+    height: 250px
   }
-  #mobile-about{
-    border:1px solid blue;
-  } */
-  /* #banner-content{
-    padding: 0;
-  } */
+  #banner-content h1{
+    font-size: 18px;
+   
+  }
+  #banner-content p{
+    font-size: 10px;
+    line-height: 10px;
+  }
+  
 }
 /*-- END MAIN BANNER --*/
 /*-- ABOUT --*/
@@ -304,25 +311,97 @@ nav a:hover{
   }
   #mobile-about h1{
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     font-size: 20px;
     padding: 40px 0;
   }
   #mobile-about img{
-    width: 40%;
-    height: 40%;
+    width: 60%;
+    height: 60%;
     border-radius: 100%;
     float: left;
     shape-outside: circle();
-    padding: 20px;
+    padding: 10px 10px 10px 10px;
   }
   #mobile-about p{
     text-align: left;
   }
- 
 }
-
+@media screen and (max-width: 400px) {
+  #mobile-about h1{
+    font-size: 16px;
+  }
+}
 /*-- END ABOUT --*/
+/*-- SKILLS --*/
+#skills{
+  width: 100%;
+  margin: 0 auto;
+  height: 400px;
+  background-color:rgba(187,193,227,1);
+  padding-top: 100px;
+}
+#skills-container{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#skills-img{
+  width: 30%;
+}
+#skills-img img{
+  width: 100%;
+}
+#skills-content{
+  height:600px;
+  border:1px solid rgb(225, 207, 248);
+}
+.skill{
+  display: flex;
+  margin-bottom: 25px;
+  width: 450px;
+}
+.skill p{
+  font-weight: 500;
+}
+.progress-holder{
+  margin: 10px 20px 10px 0px;
+  width: 60%;
+  height: 7px;
+  background-color: #494d5f;
+  border-radius: 25px;
+  position: relative;
+}
+.progress-holder p{
+  position: absolute;
+  width: 10%;
+  margin-top: -10%;
+  font-size: 10px;
+
+}
+.progress-bar{
+  position: absolute;
+  height: 100%;
+  border-radius: 25px;
+  background-color: #e5eaf5;
+}
+.skill-html{
+  width: 95%;
+}
+.skill-js{
+  width: 90%;
+}
+.skill-react{
+  width: 95%;
+}
+.skill-responsive{
+  width: 95%;
+}
+.skill-other{
+  width: 95%;
+}
+/*-- END SKILLS --*/
 /*-- PROJECTS --*/
 #projects{
     width:100%;
@@ -375,25 +454,3 @@ nav a:hover{
   background-repeat: no-repeat, repeat;
   background-image: url(./images/purple_figure.jpeg);
 } */
-/*-- Skills container --*/
-#skills-container{
-  width: 50%;
-  height:600px;
-  border:1px solid red;
-}
-#progress-holder{
-  margin-top: 40px;
-  width: 40%;
-  height: 6px;
-  background-color: #333333;
-  border-radius: 25px;
-  position: relative;
-}
-#progress-bar{
-  position: absolute;
-  width: 90%;
-  height: 100%;
-  border-radius: 25px;
-  background-color: red;
-}
-/*-- End Skills Container --*/

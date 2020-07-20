@@ -4,6 +4,7 @@ import './App.css';
 import Nav2 from './components/Nav2'
 import MainBanner from './components/MainBanner'
 import About from './components/About'
+import Skills from './components/Skills'
 import Projects from './components/Projects';
 import CodeChallenges from './components/CodeChallenges';
 import Contact from './components/Contact';
@@ -18,6 +19,7 @@ function App() {
       <Nav2/>
       <MainBanner/>
       <About/>
+      <Skills/>
       <Projects/>
       <CodeChallenges/>
       <Contact/>

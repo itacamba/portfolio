@@ -56,8 +56,3 @@ class About extends Component {
 
 export default About;
 
-{/* <div id="skills-container">
-<div id="progress-holder">
-    <div id="progress-bar"></div>
-</div>
-</div> */}
