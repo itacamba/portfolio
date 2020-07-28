@@ -54,7 +54,8 @@ a{
   cursor: pointer
 }
 span{
-  font-weight: 300;
+  font-weight: 600;
+  color: #e34343
 }
 /*-- NAV BAR --*/
 #mobile-icon{
@@ -263,7 +264,9 @@ nav button:hover{
   }
 }
 @media screen and (max-width: 500px) {
-
+  #banner-content p{
+    font-size: 14px;
+  }
   #banner-content h1{
     font-size: 40px;
   }
@@ -278,95 +281,125 @@ nav button:hover{
     width: 100px;
     padding: 13px 22px
   }
+  #banner-content button{
+    padding: 13px 22px;
+  }
 }
 /*-- END MAIN BANNER --*/
 /*-- ABOUT --*/
-#mobile-about{
-  display: none;
-}
 #about{
-  margin-top: 100px;
-  width:100%;
-  background: rgb(255,255,255);
-  background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(217,217,243,1) 56%, rgba(187,193,227,1) 100%);
-  
+  width: 100%;
+  background-color: #1b2449;
 }
 #about-container{
-  width: 80%;
-  margin: 0 auto;
-  /* border: 1px solid blue; */
-  display: flex;
-  align-items: center;
-  padding-bottom: 60px;
-}
-#picture-and-phrase{
-  width: 50%;
-  /* border: 1px solid red; */
-  position: relative;
-}
-#my-picture{
   width: 70%;
+  margin:0 auto;
+  padding:50px 0;
+  /* border:1px solid red; */
 }
-#my-picture img{
-  width: 100%;
+.section-title{
+  display: flex;
 }
-#my-phrase{
-  /* border: 1px solid blue; */
-  position: absolute;
-  margin-top: -20%;
-  width: 60%;
-  left: 15%;
+.section-title h1{
+  /* border:1px solid yellow; */
+  color: #9EA5C1;
+  margin-left: 10px;
 }
-#my-phrase h1{
-  font-size: 1.6vw;
-  text-align: center;
-  background-color: azure;
-  border-radius: 25px;
-  padding:1.7vw 3vw;
+.section-title i{
+  color: #e34343;
+  padding: 20px 0;
+  font-size: 10px;
+}
+.thin-line{
+  width:30vw;
+  height: 0.5px;
+  background-color: rgba(158, 165, 193, 0.589) ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 #about-me{
-  /* border:1px solid red; */
-  width: 50%;
+  display: flex;
+  justify-content: space-between;
 }
 #about-me p{
+  margin-top: 30px;
+  font-size: 16px;
+  width: 45%;
+  color: #f2f2f2;
   text-align: left;
-  padding: 10px 0 2vw 10px;
 }
-#about-me span{
-  font-weight: 500;
+#my-pic-container{
+  margin-top: 30px;
+  position: absolute;
+  width: 25vw;
+  right: 15%;
+  border-radius: 5px;
+  cursor:pointer;
+}
+#my-pic-container img{
+  position: relative;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+#orange-overlay{
+  position: relative;
+  margin-top: -100%;
+  display: block;
+  width: 100%;
+  height: 25vw;
+  background-color: rgba(226, 35, 35, 0.466);
+  z-index: 100;
+  border-radius: 5px;
+}
+#orange-overlay:hover{
+  transition: background-color 0.5s ease;
+  background:none;
 }
 @media screen and (max-width: 920px) {
   #about-container{
-    display: none;
-    height: auto;
-  }
-  #mobile-about{
-    display:block;
     width: 80%;
-    margin: 0 auto;
-    padding: 40px 0;
   }
-  #mobile-about h1{
+  .section-title i{
+    padding:12px 0;
+  }
+  .thin-line{
+    margin-top: 14px;
+    margin-bottom: 14px;
+  }
+  .section-title h1{
+    font-size: 23px;
+  }
+  #about-me p{ /* creates margin so image can come before paragraph*/
+    margin-top: 50vw;
     width: 100%;
-    /* border: 1px solid red; */
-    font-size: 20px;
-    padding: 40px 0;
   }
-  #mobile-about img{
-    width: 60%;
-    height: 60%;
-    border-radius: 100%;
-    float: left;
-    shape-outside: circle();
-    padding: 10px 10px 10px 10px;
+  #my-pic-container{
+    width: 40vw;
+    left:10%; /* gives the 15% margin on the left*/
   }
-  #mobile-about p{
-    text-align: left;
+  #orange-overlay{
+    height: 40vw;
   }
 }
 @media screen and (max-width: 400px) {
-  #mobile-about h1{
-    font-size: 16px;
+  .section-title h1{
+    font-size: 18px;
+  }
+  .section-title i{
+    padding:8px 0;
+  }
+  .thin-line{
+    width: 30vw;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 6px;
+  }
+  #about-me p{
+    font-size: 14px;
+    margin-top: 60vw;
   }
 }
 /*-- END ABOUT --*/

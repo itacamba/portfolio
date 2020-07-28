@@ -9,7 +9,7 @@ const ScrollToTopBtn = () => {
     }
     return (
         <div id="to-top-btn" onClick={scrollToTop}>
-            <i class="fa fa-arrow-up" aria-hidden="true"></i>
+            <i className="fa fa-arrow-up" aria-hidden="true"></i>
         </div>
     );
 };

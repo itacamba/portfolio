@@ -20,7 +20,7 @@ const Nav2 = () => {
                             activeClass='active'
                             spy={true}
                             smooth={true}
-                            offset={-90}
+                            offset={0}
                             duration={500}
                         >
                         About
@@ -59,7 +59,7 @@ const Nav2 = () => {
                         <button>Resume</button>
                     </nav>
                 <div id="mobile-icon"  onClick={handleNavClick}>
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                    <i className="fa fa-bars" aria-hidden="true"></i>
                 </div>
                {navClicked? <MobileNav handleNavClick={handleNavClick}/> : null}
             </div>
