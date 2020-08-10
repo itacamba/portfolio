@@ -26,7 +26,7 @@ const Nav2 = () => {
                         About
                         </Link>
                         <Link 
-                            to="projects"
+                            to="skills"
                             activeClass='active'
                             spy={true}
                             smooth={true}
@@ -36,7 +36,7 @@ const Nav2 = () => {
                         Skills
                         </Link>
                         <Link 
-                            to="code-challenges"
+                            to="projects"
                             activeClass='active'
                             spy={true}
                             smooth={true}

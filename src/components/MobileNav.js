@@ -1,14 +1,52 @@
 import React from 'react';
+import {Link} from 'react-scroll'
 
 const MobileNav = ({handleNavClick}) => {
     return (
         <div id="mobile-nav">
             <i class="fa fa-times" aria-hidden="true" onClick={handleNavClick}></i>
-            <a href="/"><i class="fa fa-square" aria-hidden="true"></i>About</a>
-            <a href="/"><i class="fa fa-square" aria-hidden="true"></i>Skills</a>
-            <a href="/"><i class="fa fa-square" aria-hidden="true"></i>Projects</a>
+            <Link 
+                            to="about"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                        <i class="fa fa-square" aria-hidden="true"></i>About
+            </Link>
+            
+            <Link 
+                            to="skills"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            <i class="fa fa-square" aria-hidden="true"></i>Skills
+            </Link>
+            <Link 
+                            to="projects"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            <i class="fa fa-square" aria-hidden="true"></i>Projects
+            </Link>
             {/* <a href="#">Technical Writting</a> */}
-            <a href="/"><i class="fa fa-square" aria-hidden="true"></i>Contact</a>
+            <Link 
+                            to="contact"
+                            activeClass='active'
+                            spy={true}
+                            smooth={true}
+                            offset={0}
+                            duration={500}
+                        >
+                            <i class="fa fa-square" aria-hidden="true"></i>Contact
+            </Link>
             <button className="resume-btn">Resume</button>
         </div>
     );
