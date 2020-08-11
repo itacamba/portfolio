@@ -294,7 +294,8 @@ nav button:hover{
 #about-container{
   width: 70%;
   margin:0 auto;
-  padding:50px 0;
+  padding-top: 50px;
+  padding-bottom: 120px;
   /* border:1px solid red; */
 }
 .section-title{
@@ -350,7 +351,7 @@ nav button:hover{
   display: block;
   width: 100%;
   height: 25vw;
-  background-color: rgba(226, 35, 35, 0.466);
+  background-color: rgba(227, 67, 67, 0.466);
   z-index: 100;
   border-radius: 5px;
 }
@@ -365,13 +366,14 @@ nav button:hover{
   .section-title i{
     padding:12px 0;
   }
+  .section-title h1{
+    font-size: 23px;
+  }
   .thin-line{
     margin-top: 14px;
     margin-bottom: 14px;
   }
-  .section-title h1{
-    font-size: 23px;
-  }
+ 
   #about-me p{ /* creates margin so image can come before paragraph*/
     margin-top: 50vw;
     width: 100%;
@@ -407,39 +409,65 @@ nav button:hover{
 #skills{
   width: 100%;
   margin: 0 auto;
-  height: 400px;
-  background-color:rgba(187,193,227,1);
-  padding-top: 100px;
+  background-color:#24305E;
+  padding-top: 50px;
+  /* border: 1px solid yellow; */
 }
-#skills-container{
-  width: 80%;
+.skills-title{
+  display: flex;
+  justify-content: flex-end;
+  width: 70%;
   margin: 0 auto;
+}
+.skills-title h1{
+  /* border:1px solid yellow; */
+  color: #9EA5C1;
+  margin-left: 10px;
+}
+.skills-title i{
+  color: #e34343;
+  padding: 20px 0;
+  font-size: 10px;
+}
+
+#skills-container{
+  width: 70%;
+  margin: 50px auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid green; */
 }
 #skills-img{
-  width: 30%;
+  width: 35%;
 }
 #skills-img img{
   width: 100%;
 }
 #skills-content{
-  height:600px;
-  border:1px solid rgb(225, 207, 248);
+  margin-top: 5px;
+  /* border:1px solid red; */
+
 }
 .skill{
   display: flex;
   margin-bottom: 25px;
   width: 450px;
 }
-.skill p{
+.skill h1{
+  font-size: 16px;
   font-weight: 500;
+  color: #9EA5C1;
+}
+.skill p{
+  color: #9EA5C1;
+  font-weight: 600;
 }
 .progress-holder{
   margin: 10px 20px 10px 0px;
   width: 60%;
   height: 7px;
-  background-color: #494d5f;
+  background-color: #f2f2f2;
   border-radius: 25px;
   position: relative;
 }
@@ -454,7 +482,7 @@ nav button:hover{
   position: absolute;
   height: 100%;
   border-radius: 25px;
-  background-color: #e5eaf5;
+  background-color: #e34343;
 }
 .skill-html{
   width: 95%;
@@ -471,20 +499,125 @@ nav button:hover{
 .skill-other{
   width: 95%;
 }
+@media screen and (max-width: 920px) {
+  #skills-container{
+    width: 80%;
+  }
+  .skills-title{
+    width: 82%; 
+  }
+  .skills-title i{
+    padding:12px 0;
+  }
+  .skills-title h1{
+    font-size: 23px;
+  }
+}
 /*-- END SKILLS --*/
 /*-- PROJECTS --*/
 #projects{
     width:100%;
-    height:600px;
-    background-color: pink;
+    background-color: #1b2449;
   }
+#projects-container{
+  width: 70%;
+  margin:0 auto;
+  padding: 50px 0;
+}
+#project-boxes{
+  width: 100%;
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.project{
+  width: 22%;
+  background-color: #374785;
+  cursor: pointer;
+}
+.project-image{
+  width: 100%;
+}
+.project-image img{
+  width: 100%;
+}
+.project-description{
+  display: block;
+  text-align: left;
+  padding: 0 15px;
+}
+.project-description h1{
+  padding: 20px 0;
+  font-size: 12px;
+  color: #9EA5C1;
+}
+.project-description p{
+  font-size: 16px;
+  color: #9EA5C1;
+  font-weight: 300;
+}
+.project-buttons{
+  /* border: 1px solid red; */
+  padding: 20px 0;
+  display: flex;
+}
+.project-buttons button{
+  border-style: none;
+  color: #e34343;
+  font-weight: 600;
+  background-color:#374785;
+  cursor: pointer;
+}
+.project-buttons span{
+  font-size: 12px;
+}
 
 /*-- END PROJECTS --*/
 /*-- CONTACT --*/
 #contact{
   width:100%;
   height:600px;
-  background-color: yellow;
+  background-color:#0A0B20;
+  padding: 50px 0;
+}
+#contact h1{
+  text-align: center;
+  color: white;
+}
+#contact form{
+  padding: 50px 0;
+  max-width: 450px;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+}
+#contact form input[type=text]{
+  margin-bottom: 15px;
+  padding: 10px;
+}
+#contact form textarea{
+  height: 150px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+#contact form button{
+  width: 150px;
+  border-radius: 5px;
+  background-color: #0A0B20;
+  border: 2px solid white;
+  color: white;
+  padding: 15px 10px;
+  margin-top:15px;
+}
+.copyright{
+  width: 60%;
+  margin: 0 auto;
+  display: block;
+  border-top: .5px solid rgba(255,255,255,.2);
+  padding-top: 30px;
+  color: white;
 }
 /*-- END CONTACT --*/
 

@@ -3,9 +3,14 @@ import React from 'react';
 const Skills = () => {
     return (
         <div id="skills">
+            <div className="skills-title">
+                <i className="fa fa-square" aria-hidden="true"></i>
+                <h1>My Skills</h1>
+                <div className="thin-line"></div>
+            </div>
             <div id="skills-container">
                 <div id="skills-img">
-                    <img src="../../node-development.png"/>
+                    <img src="../../me.jpg"/>
                 </div>
                 <div id="skills-content">
                     <div className="skill">
@@ -13,35 +18,35 @@ const Skills = () => {
                             <p>95%</p>
                             <div className="progress-bar skill-html"></div>
                         </div>
-                        <p>HTML / CSS</p>
+                        <h1>HTML / CSS</h1>
                     </div>
                     <div className="skill">
                         <div className="progress-holder">
                             <p>90%</p>
                             <div className="progress-bar skill-js"></div>
                         </div>
-                        <p>JavaScript(ES6)</p>
+                        <h1>JavaScript(ES6)</h1>
                     </div>
                     <div className="skill">
                         <div className="progress-holder">
                             <p>95%</p>
                             <div className="progress-bar skill-react"></div>
                         </div>
-                        <p>React JS</p>
+                        <h1>React JS</h1>
                     </div>
                     <div className="skill">
                         <div className="progress-holder">
                             <p>95%</p>
                             <div className="progress-bar skill-responsive"></div>
                         </div>
-                        <p>Responsive Design</p>
+                        <h1>Responsive Design</h1>
                     </div>
                     <div className="skill">
                         <div className="progress-holder">
                             <p>95%</p>
                             <div className="progress-bar skill-other"></div>
                         </div>
-                        <p>Invision / Git</p>
+                        <h1>Invision Studio / Git</h1>
                     </div>
                 </div> 
             </div>
